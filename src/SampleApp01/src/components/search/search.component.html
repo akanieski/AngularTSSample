@@ -1,0 +1,16 @@
+﻿<div class="search">
+    <form class="input-group col-md-12" ng-submit="viewModel.search()">
+        <input autofocus
+               class="search-query form-control"
+               placeholder="Search by artist"
+               ng-model="viewModel.query"
+               ng-change="viewModel.search()"
+               ng-model-options="{debounce:200}" />
+        <span class="input-group-btn">
+            <button class="btn btn-danger" type="button" ng-click="viewModel.search()">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+    </form>
+</div>
+<search-results results="viewModel.results"></search-results>

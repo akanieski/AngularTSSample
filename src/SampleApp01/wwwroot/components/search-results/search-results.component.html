@@ -1,0 +1,8 @@
+<table class="table table-hover col-lg-12">
+    <tr class="clearfix" ng-repeat="artist in viewModel.results.artists.items">
+        <td>
+            <img ng-src="{{artist.images[0].url}}" class="img-circle pull-right" width="32" height="32" />
+            {{artist.name}}
+        </td>
+    </tr>
+</table>
